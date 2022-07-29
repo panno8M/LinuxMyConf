@@ -1,0 +1,22 @@
+#! /bin/sh
+
+link(){
+  dst=$1
+  src=$1
+  [ $# -eq 2 ] && src=$2
+
+  ln -fs $(dirname $0)$src $dst
+}
+
+link /etc/vconsole.conf
+link /etc/kmscon
+
+link /home/panno/.tmux.conf /home/dots/tmux.conf
+
+link /home/panno/.gitconfig /home/dots/gitconfig
+link /root/.gitconfig /home/dots/gitconfig
+
+link /home/panno/.twmrc /home/dots/twmrc
+
+link /home/panno/.vimrc /home/dots/vimrc
+

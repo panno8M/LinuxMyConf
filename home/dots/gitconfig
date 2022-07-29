@@ -1,0 +1,7 @@
+[user]
+	email = panno.800k@gmail.com
+	name = panno
+[init]
+	defaultBranch = main
+[credential]
+	helper = store --file ~/.git_credentials
